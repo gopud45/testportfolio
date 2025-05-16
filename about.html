@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gopu Das</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="container">
+                <div class="logo">Gopu Das</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <section id="about" class="about-section">
+                <div class="container">
+                    <div class="about-content">
+                        <h2>About me</h2>
+                        <p>A 3rd-year BCA student at Inspiria Knowledge Campus, passionate about coding and innovation. I'm excited to connect with like-minded professionals and learn from their experiences. With a strong foundation in programming languages like Python, C, HTML, CSS, Java, and PHP, I'm looking forward to exploring opportunities in software development and technology.</p>
+                        <p><strong>Programming languages:</strong> Python, C, Java, PHP</p>
+                        <p><strong>Web development:</strong> HTML, CSS, Javascript, WordPress</p>
+                        <p>Strong problem-solving skills</p>
+                        <p>Eager to learn and adapt to new technologies</p>
+                        <p>Currently pursuing BCA at Inspiria Knowledge Campus (2022-2025)</p>
+                        <p>Feel free to reach out to me for networking, advice, or collaboration opportunities in the tech industry!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Gopu Das. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('header nav');
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>
