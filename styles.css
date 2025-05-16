@@ -1,0 +1,240 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Choose a clean font */
+    background-color: #1E1E1E; /* Dark background */
+    color: #FFFFFF; /* Light text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #2C2C2C; /* Slightly lighter dark background */
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #BDBDBD;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FF9800; /* Orange accent */
+}
+
+.mobile-nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    margin-bottom: 40px;
+}
+
+.hello {
+    font-size: 2rem;
+    color: #BDBDBD;
+    margin-bottom: 10px;
+}
+
+.hello span {
+    color: #FF9800; /* Orange accent */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.developer-title {
+    font-size: 1.5rem;
+    color: #BDBDBD;
+    margin-bottom: 20px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary-button {
+    background-color: #FF9800; /* Orange accent */
+    color: #FFFFFF;
+}
+
+.primary-button:hover {
+    background-color: #E68A00;
+}
+
+.secondary-button {
+    border: 1px solid #BDBDBD;
+    color: #BDBDBD;
+}
+
+.secondary-button:hover {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+/* Skills Section */
+.skills {
+    padding: 80px 0;
+    background-color: #2C2C2C; /* Slightly lighter dark background */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #3B3B3B; /* Darker background for skills */
+    color: #FFFFFF;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.skill-item i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #FF9800; /* Orange accent for icons */
+}
+
+/* Footer */
+footer {
+    background-color: #2C2C2C;
+    padding: 20px 0;
+    text-align: center;
+    color: #BDBDBD;
+    font-size: 0.9rem;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        width: 100%;
+        background-color: #2C2C2C;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav.nav-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero .container {
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons a {
+        margin: 10px 0;
+    }
+
+    .profile-image-container {
+        margin-top: 30px;
+    }
+}
